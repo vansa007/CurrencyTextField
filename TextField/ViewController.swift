@@ -90,6 +90,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             textString = "\(cleanNumericString[0..<3]),\(cleanNumericString[3..<6]),\(cleanNumericString[6..<9]),\(cleanNumericString[9..<12]),\(cleanNumericString[12..<cleanNumericString.count])"
         }else {
             if length > 15 {
+                length = 15
                 return false
             }
             textString = cleanNumericString
